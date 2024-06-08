@@ -5,25 +5,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
-@Table(name = "document_source")
-public class DocumentSource {
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Table(name = "cause_of_death")
+public class CauseOfDeath {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
-
-    private String version;
-
+    private String code;
+    private int count;
     private String description;
-
-    private String organization;
-
-    private boolean active = true;
-
 }

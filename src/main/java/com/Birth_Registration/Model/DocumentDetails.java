@@ -23,6 +23,7 @@ public class DocumentDetails {
     private DocumentSource documentSource;
 
     private String docNo;
+    private String name;
 
     private String externalRef;
 
@@ -30,10 +31,11 @@ public class DocumentDetails {
 
     private Integer endNo;
 
-    private Integer amount;
+    private Double amount;
 
     @Temporal(TemporalType.DATE)
     private Date uploadDate;
 
     private boolean bankAccount;
+
 }
